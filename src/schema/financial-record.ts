@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 interface FinancialRecord {
   userId: string;
   date: Date;
-  desciption: string;
+  description: string;
   amount: number;
   category: string;
   paymentMethod: string;
@@ -17,7 +17,7 @@ const financialRecordSchema = new mongoose.Schema<FinancialRecord>({
     type: Date,
     required: true,
   },
-  desciption: {
+  description: {
     type: String,
     required: true,
   },
