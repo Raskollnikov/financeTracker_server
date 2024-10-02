@@ -1,4 +1,4 @@
-import { Request, response, Response } from "express";
+import { Request, Response } from "express";
 import FinancialRecordModel from "../schema/financial-record";
 
 const getAllByUser = async (req: Request, res: Response) => {
